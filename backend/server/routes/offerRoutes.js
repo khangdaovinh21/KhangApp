@@ -1,8 +1,7 @@
-// backend/routes/offerRoutes.js
 
 const express = require('express');
 const router = express.Router();
-const offerController = require('../controllers/offerController');
+const offerController = require('../../controllers/offerController');
 
 router.get('/', offerController.getOffers);
 router.post('/', offerController.createOffer);

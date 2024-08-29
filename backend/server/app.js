@@ -23,7 +23,7 @@ app.listen(PORT, () => {
 });
 const corsOptions = {
   origin: '*', 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Chỉ định rõ các phương thức được phép
-  allowedHeaders: ['Content-Type', 'Authorization'] // Đảm bảo rằng headers được phép
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  allowedHeaders: ['Content-Type', 'Authorization'] 
 };
 app.use(cors(corsOptions));

@@ -7,6 +7,7 @@ services:
       - mongo
     environment:
       MONGO_URL: mongodb://mongo:27017/your-database-name
+    command: ["npx", "nodemon", "app.js"]
 
   mongo:
     image: mongo
